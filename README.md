@@ -1,4 +1,4 @@
-# Desharp - C# .NET Debugging Tool - C# code snippets
+# Desharp - C#/VB .NET Debugging Tool - Code Snippets
 Visual Studio code snippets for C# applications to work better with Desharp library.
 
 ## Instalation
