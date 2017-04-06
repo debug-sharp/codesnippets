@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>dde</Title>
-			<Shortcut>dde</Shortcut>
-			<Description>Code snippet for logging exceptions: Desharp.Debug.Log(e);</Description>
+			<Title>dddd</Title>
+			<Shortcut>dddd</Shortcut>
+			<Description>Code snippet for: Desharp.Debug.DumpAndDie(obj);</Description>
 			<Author>Tom Flídr</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -17,9 +17,9 @@
 					<Function>SimpleTypeName(global::Desharp.Debug)</Function>
 				</Literal>
 				<Literal>
-					<ID>e</ID>
-					<Default>e</Default>
-					<ToolTip>Any C# Exception instance to dump into application output.</ToolTip>
+					<ID>obj</ID>
+					<Default>obj</Default>
+					<ToolTip>Any C# object to dump into application output.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>snippetEnd</ID>
@@ -27,7 +27,7 @@
 					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($e$);$snippetEnd$]]></Code>
+			<Code Language="csharp"><![CDATA[$DesharpDebug$.DumpAndDie($obj$);$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>

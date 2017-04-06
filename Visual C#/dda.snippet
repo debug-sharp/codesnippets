@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>dde</Title>
-			<Shortcut>dde</Shortcut>
-			<Description>Code snippet for logging exceptions: Desharp.Debug.Log(e);</Description>
+			<Title>dda</Title>
+			<Shortcut>dda</Shortcut>
+			<Description>Code snippet for: Desharp.Debug.Assert(comparation, description);</Description>
 			<Author>Tom Flídr</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -17,9 +17,14 @@
 					<Function>SimpleTypeName(global::Desharp.Debug)</Function>
 				</Literal>
 				<Literal>
-					<ID>e</ID>
-					<Default>e</Default>
-					<ToolTip>Any C# Exception instance to dump into application output.</ToolTip>
+					<ID>comparation</ID>
+					<Default></Default>
+					<ToolTip>Comparation to log/dump.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>description</ID>
+					<Default></Default>
+					<ToolTip>Comparation description.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>snippetEnd</ID>
@@ -27,7 +32,7 @@
 					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($e$);$snippetEnd$]]></Code>
+			<Code Language="csharp"><![CDATA[$DesharpDebug$.Assert($comparation$, "$description$");$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>
