@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Assert(comparation, description)</Title>
+			<Shortcut>dda</Shortcut>
+			<Description>Print to application output or log into file (if enabled) first param to be true or not and describe what was equal or not in first param by second param message.</Description>
+			<Author>Tom Flídr</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal>
+					<ID>comparation</ID>
+					<Default>True</Default>
+					<ToolTip>Comparation boolean to dump or log, way to compare things is up to you.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>description</ID>
+					<Default></Default>
+					<ToolTip>Any text to describe previous comparation.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+			<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Assert(
+			$comparation$, 
+			"$description$"
+		)$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -2,13 +2,10 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>ddl</Title>
+			<Title>Desharp.Debug.Log(obj, Desharp.Level.DEBUG);</Title>
 			<Shortcut>ddl</Shortcut>
-			<Description>Code snippet for: Desharp.Debug.Log(obj, Desharp.Level.DEBUG);</Description>
+			<Description>Log any structuralized .NET object into HDD log file, chosen by second param.</Description>
 			<Author>Tom Flídr</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-			</SnippetTypes>
 		</Header>
 		<Snippet>
 			<Declarations>
@@ -16,23 +13,26 @@
 					<ID>DesharpDebug</ID>
 					<Function>SimpleTypeName(global::Desharp.Debug)</Function>
 				</Literal>
+				<Literal Editable="false">
+					<ID>DesharpLevel</ID>
+					<Function>SimpleTypeName(global::Desharp.Level)</Function>
+				</Literal>
 				<Literal>
 					<ID>obj</ID>
 					<Default>obj</Default>
-					<ToolTip>Any C# object to dump into HDD log.</ToolTip>
+					<ToolTip>Any .NET object to log into HDD log file, chosen by second param.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>level</ID>
 					<Default>DEBUG</Default>
-					<ToolTip>Log level - ALERT, CRITICAL, DEBUG, EMERGENCY, ERROR, INFO, JAVASCRIPT, NOTICE or WARNING.</ToolTip>
+					<ToolTip>Log level (log file name): ALERT, CRITICAL, DEBUG, EMERGENCY, ERROR, INFO, JAVASCRIPT, NOTICE or WARNING.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>snippetEnd</ID>
 					<Default></Default>
-					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($obj$, Desharp.Level.$level$);$snippetEnd$]]></Code>
+			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($obj$, $DesharpLevel$.$level$);$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>

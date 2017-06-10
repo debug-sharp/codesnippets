@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Configure(obj, New DebugConfig () With {...})</Title>
+			<Author>Tom Flídr</Author>
+			<Description>Configure Desharp assembly from running application environment and override any XML config settings or automaticly detected settings.</Description>
+			<Shortcut>ddc</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal Editable="false">
+					<ID>DesharpDebugConfig</ID>
+					<Function>SimpleTypeName(Desharp.DebugConfig)</Function>
+				</Literal>
+				<Literal Editable="false">
+					<ID>DesharpLogFormat</ID>
+					<Function>SimpleTypeName(Desharp.LogFormat)</Function>
+				</Literal>
+				<Literal>
+					<ID>enabled</ID>
+					<Default>true</Default>
+					<ToolTip>Debug dumping into output is enabled or not.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>depth</ID>
+					<Default>3</Default>
+					<ToolTip>How many levels in complex type variables will be iterated throw to dump all it's properties, fields and other values.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>directory</ID>
+					<Default>logs</Default>
+					<ToolTip>Relative or absolute path into directory where all log files and mail notify boolean files will be stored.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>logFormat</ID>
+					<Default>Auto</Default>
+					<ToolTip>Application environment - usually automaticly determinated by Desharp asembly - change this value only when you REALLY know what you are doing!</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+					<ToolTip>Snippet end.</ToolTip>
+				</Literal>
+			</Declarations>
+		<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Configure(New $DesharpDebugConfig$ With {
+			.Enabled = $enabled$,
+			.Depth = $depth$,
+			.Directory = "~/$directory$",
+			.LogFormat = $DesharpLogFormat$.$logFormat$
+		})$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

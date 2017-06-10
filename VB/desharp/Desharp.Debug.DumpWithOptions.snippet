@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Dump(obj, New DumpOptions () With {...})</Title>
+			<Author>Tom Flídr</Author>
+			<Description>Print any structuralized .NET object in Debugger Output window or in Console window with printing options like object structure printing depth, strings printing max. length or boolean to return printed object string reprezentation.</Description>
+			<Shortcut>dddo</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal Editable="false">
+					<ID>DesharpDumpOptions</ID>
+					<Function>SimpleTypeName(Desharp.DumpOptions)</Function>
+				</Literal>
+				<Literal>
+					<ID>obj</ID>
+					<Default>obj</Default>
+					<ToolTip>Any .NET object to print in Debugger Output window or directly in Console window.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>depth</ID>
+					<Default>4</Default>
+					<ToolTip>Printed object structure depth (levels count to print).</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>return</ID>
+					<Default>false</Default>
+					<ToolTip>True to return printed object as string object reprezentation.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+		<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Dump($obj$, New $DesharpDumpOptions$ With {
+			.Depth = $depth$,
+			.Return = $return$
+		})$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

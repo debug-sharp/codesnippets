@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Log(obj, Desharp.Level.DEBUG)</Title>
+			<Shortcut>ddl</Shortcut>
+			<Description>Log any structuralized .NET object into HDD log file, chosen by second param.</Description>
+			<Author>Tom Flídr</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal Editable="false">
+					<ID>DesharpLevel</ID>
+					<Function>SimpleTypeName(Desharp.Level)</Function>
+				</Literal>
+				<Literal>
+					<ID>obj</ID>
+					<Default>obj</Default>
+					<ToolTip>Any .NET object to log into HDD log file, chosen by second param.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>level</ID>
+					<Default>DEBUG</Default>
+					<ToolTip>Log level (log file name): ALERT, CRITICAL, DEBUG, EMERGENCY, ERROR, INFO, JAVASCRIPT, NOTICE or WARNING.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+			<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Log($obj$, $DesharpLevel$.$level$)$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

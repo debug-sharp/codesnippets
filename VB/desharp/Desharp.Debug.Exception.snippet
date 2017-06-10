@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Log(e)</Title>
+			<Shortcut>dde</Shortcut>
+			<Description>Log rendered exception instance as string with all inner exceptions into file exceptions.(log|html).</Description>
+			<Author>Tom Flídr</Author>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal>
+					<ID>e</ID>
+					<Default>e</Default>
+					<ToolTip>Any .NET object inherited from System.Exception to render into HDD exceptions log.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+			<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Log($e$)$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

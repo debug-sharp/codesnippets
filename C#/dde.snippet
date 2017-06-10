@@ -2,13 +2,10 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>dds</Title>
-			<Shortcut>dds</Shortcut>
-			<Description>Code snippet for: Desharp.Debug.Stop();</Description>
+			<Title>Desharp.Debug.Log(e);</Title>
+			<Shortcut>dde</Shortcut>
+			<Description>Log rendered exception instance as string with all inner exceptions into file exceptions.(log|html).</Description>
 			<Author>Tom Flídr</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-			</SnippetTypes>
 		</Header>
 		<Snippet>
 			<Declarations>
@@ -17,12 +14,16 @@
 					<Function>SimpleTypeName(global::Desharp.Debug)</Function>
 				</Literal>
 				<Literal>
+					<ID>e</ID>
+					<Default>e</Default>
+					<ToolTip>Any .NET object inherited from System.Exception to render into HDD exceptions log.</ToolTip>
+				</Literal>
+				<Literal>
 					<ID>snippetEnd</ID>
 					<Default></Default>
-					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$DesharpDebug$.Stop();$snippetEnd$]]></Code>
+			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($e$);$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>

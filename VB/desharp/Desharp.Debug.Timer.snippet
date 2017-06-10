@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Desharp.Debug.Timer(name)</Title>
+			<Author>Tom Flídr</Author>
+			<Description>Prints to ouput or into log file number of seconds from last timer call under called name in seconds with 3 floating point decimal spaces.</Description>
+			<Shortcut>ddt</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>DesharpDebug</ID>
+					<Function>SimpleTypeName(Desharp.Debug)</Function>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>default</Default>
+					<ToolTip>Timer name, used as key to find last <c>Desharp.Debug.Timer(name)</c> call from internal dictionary to print the timespan in app output or log file.</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>snippetEnd</ID>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+			<Code Language="VB" Kind="method body"><![CDATA[$DesharpDebug$.Timer("$name$")$snippetEnd$]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>ddd</Title>
+			<Title>Desharp.Debug.Dump(obj);</Title>
 			<Shortcut>ddd</Shortcut>
-			<Description>Code snippet for: Desharp.Debug.Dump(obj);</Description>
+			<Description>Print any structuralized .NET object in Debugger Output window or in Console window.</Description>
 			<Author>Tom Flídr</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-			</SnippetTypes>
 		</Header>
 		<Snippet>
 			<Declarations>
@@ -19,12 +16,11 @@
 				<Literal>
 					<ID>obj</ID>
 					<Default>obj</Default>
-					<ToolTip>Any C# object to dump into application output.</ToolTip>
+					<ToolTip>Any .NET object to print in Debugger Output window or directly in Console window.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>snippetEnd</ID>
 					<Default></Default>
-					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp"><![CDATA[$DesharpDebug$.Dump($obj$);$snippetEnd$]]></Code>

@@ -2,13 +2,10 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>dde</Title>
-			<Shortcut>dde</Shortcut>
-			<Description>Code snippet for logging exceptions: Desharp.Debug.Log(e);</Description>
+			<Title>Desharp.Debug.Stop();</Title>
+			<Shortcut>dds</Shortcut>
+			<Description>Print current thread stack trace into application output and exit web request for web applications or exit running desktop application with all application threads.</Description>
 			<Author>Tom Flídr</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-			</SnippetTypes>
 		</Header>
 		<Snippet>
 			<Declarations>
@@ -17,17 +14,11 @@
 					<Function>SimpleTypeName(global::Desharp.Debug)</Function>
 				</Literal>
 				<Literal>
-					<ID>e</ID>
-					<Default>e</Default>
-					<ToolTip>Any C# Exception instance to dump into application output.</ToolTip>
-				</Literal>
-				<Literal>
 					<ID>snippetEnd</ID>
 					<Default></Default>
-					<ToolTip>Snippet end.</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$DesharpDebug$.Log($e$);$snippetEnd$]]></Code>
+			<Code Language="csharp"><![CDATA[$DesharpDebug$.Stop();$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>
