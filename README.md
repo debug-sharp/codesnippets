@@ -44,7 +44,7 @@ Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0,
 
 ```vb
 ' Snippet shortcut: dde
-Desharp.Debug.Log(exception As Exception)
+Desharp.Debug.Log(Optional exception As Exception)
 
 ' Snippet shortcut: ddl
 Desharp.Debug.Log(
@@ -64,7 +64,7 @@ Desharp.Debug.Stop();
 Desharp.Debug.Configure(DebugConfig cfg);
 
 // Snippet shortcut: dda
-Desharp.Debug.Assert(bool assertion, string description = "");
+Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);
 
 // Snippet shortcut: ddt
 Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);
@@ -75,10 +75,10 @@ Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level l
 Desharp.Debug.Stop()
 
 ' Snippet shortcut: ddc
-Desharp.Debug.Configure(DebugConfig cfg)
+Desharp.Debug.Configure(cfg As DebugConfig)
 
 ' Snippet shortcut: dda
-Desharp.Debug.Assert(assertion As Boolean, Optional description As String = "")
+Desharp.Debug.Assert(assertion As Boolean, Optional description As String = "", Optional logLevel As Level = Level.DEBUG)
 
 ' Snippet shortcut: ddt
 Desharp.Debug.Timer(
@@ -88,7 +88,6 @@ Desharp.Debug.Timer(
 )
 ```
 
-
 ## Instalation - C#
 - download and unzip package
 - copy all files from repo directory `C#` with extension `.snippet` into directory:
@@ -97,7 +96,7 @@ Desharp.Debug.Timer(
   - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC#\Snippets\1033\Visual C#\`
   - for VS 2012: `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC#\Snippets\1033\Visual C#\`
   - ...
-- you can use it imediatelly, no needs to restart Visual Studio (tested in 2015)
+- you can use it immediately, no needs to restart Visual Studio (tested in 2015)
 
 ## Instalation - Visual Basic
 - download and unzip package
@@ -107,4 +106,4 @@ Desharp.Debug.Timer(
   - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VB\Snippets\1033\other\`
   - for VS 2012: `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VB\Snippets\1033\other\`
   - ...
-- you can use it imediatelly, no needs to restart Visual Studio (tested in 2015)
+- you can use it immediately, no needs to restart Visual Studio (tested in 2015)
