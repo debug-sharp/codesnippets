@@ -3,27 +3,27 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 
 ## Shortcuts
 #### Dumping:
-```cs
-/// ddd
+```csharp
+// ddd
 Desharp.Debug.Dump(params object[] args);
 Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
-/// dddo
+// dddo
 Desharp.Debug.Dump(object obj, DumpOptions? options = null);
-/// ddf
+// ddf
 Desharp.Debug.Fire.Log(object obj, FireLog.Debug);
-/// dddd
+// dddd
 Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
 ```
 
 ```vb
-/// ddd
+' ddd
 Desharp.Debug.Dump(ParamArray args As Object)
 Desharp.Debug.Dump(Optional exception As Exception = null, Optional options As DumpOptions? = null)
-/// dddo
+' dddo
 Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = null)
-/// ddf
+' ddf
 Desharp.Debug.Fire.Log(obj As Object, FireLog.Debug As FireLog)
-/// dddd
+' dddd
 Desharp.Debug.DumpAndDie(Optional obj As Object = null, Optional options As DumpOptions? = null)
 ```
 
