@@ -6,7 +6,6 @@ Visual Studio code snippets for C# or Visual Basic to work much faster with Desh
 ```csharp
 // Snippet shortcut: ddd
 Desharp.Debug.Dump(params object[] args);
-Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
 
 // Snippet shortcut: dddo
 Desharp.Debug.Dump(object obj, DumpOptions? options = null);
@@ -21,7 +20,6 @@ Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
 ```vb
 ' Snippet shortcut: ddd
 Desharp.Debug.Dump(ParamArray args As Object)
-Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
 
 ' Snippet shortcut: dddo
 Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
