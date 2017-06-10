@@ -3,10 +3,11 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 
 ## Shortcuts
 - dumping:
-  - **ddd** - `Desharp.Debug.Dump(params object[] args);` or `Desharp.Debug.Dump(Exception exception = null, Desharp.DumpOptions? options = null);`
+  - **ddd** - `Desharp.Debug.Dump(params object[] args);`
+            - `Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);`
   - **ddf** - `Desharp.Debug.Fire.Log(object obj, FireLog.);`
-  - **dddd** - `Desharp.Debug.DumpAndDie(object obj = null, Desharp.DumpOptions? options = null);`
-  - **dddo** - `Desharp.Debug.Dump(object obj, Desharp.DumpOptions? options = null);`
+  - **dddd** - `Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);`
+  - **dddo** - `Desharp.Debug.Dump(object obj, DumpOptions? options = null);`
 
 - logging:
   - **dde** - `Desharp.Debug.Log(Exception exception = null);`
@@ -14,9 +15,9 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 
 - other:
   - **dds** - `Desharp.Debug.Stop();
-  - **ddc** - `Desharp.Debug.Configure(Desharp.DebugConfig cfg);`
-  - **dda** - `Desharp.Debug.Assert(bool assertion, string description = "", Desharp.Level logLevel = Desharp.Level.DEBUG);`
-  - **ddt** - `Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Desharp.Level logLevel = Desharp.Level.DEBUG);`
+  - **ddc** - `Desharp.Debug.Configure(DebugConfig cfg);`
+  - **dda** - `Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);`
+  - **ddt** - `Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);`
 
 
 ## Instalation - C#
