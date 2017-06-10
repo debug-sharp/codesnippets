@@ -7,15 +7,24 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 /// ddd
 Desharp.Debug.Dump(params object[] args);
 Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
-
-/// ddf
-Desharp.Debug.Fire.Log(object obj, FireLog.);
-
-/// dddd
-Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
-
 /// dddo
 Desharp.Debug.Dump(object obj, DumpOptions? options = null);
+/// ddf
+Desharp.Debug.Fire.Log(object obj, FireLog.Debug);
+/// dddd
+Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
+```
+
+```vb
+/// ddd
+Desharp.Debug.Dump(ParamArray args As Object)
+Desharp.Debug.Dump(Optional exception As Exception = null, Optional options As DumpOptions? = null)
+/// dddo
+Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = null)
+/// ddf
+Desharp.Debug.Fire.Log(obj As Object, FireLog.Debug As FireLog)
+/// dddd
+Desharp.Debug.DumpAndDie(Optional obj As Object = null, Optional options As DumpOptions? = null)
 ```
 
 #### Logging:
