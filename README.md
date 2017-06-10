@@ -4,32 +4,51 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 ## Shortcuts
 #### Dumping:
 ```csharp
-// ddd
+// Snippet shortcut: ddd
 Desharp.Debug.Dump(params object[] args);
 Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
-// dddo
+
+// Snippet shortcut: dddo
 Desharp.Debug.Dump(object obj, DumpOptions? options = null);
-// ddf
+
+// Snippet shortcut: ddf
 Desharp.Debug.Fire.Log(object obj, FireLog.Debug);
-// dddd
+
+// Snippet shortcut: dddd
 Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
 ```
 
 ```vb
-' ddd
+' Snippet shortcut: ddd
 Desharp.Debug.Dump(ParamArray args As Object)
-Desharp.Debug.Dump(Optional exception As Exception = null, Optional options As DumpOptions? = null)
-' dddo
-Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = null)
-' ddf
+Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
+
+' Snippet shortcut: dddo
+Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
+
+' Snippet shortcut: ddf
 Desharp.Debug.Fire.Log(obj As Object, FireLog.Debug As FireLog)
-' dddd
-Desharp.Debug.DumpAndDie(Optional obj As Object = null, Optional options As DumpOptions? = null)
+
+' Snippet shortcut: dddd
+Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
 ```
 
 #### Logging:
-  - **dde** - `Desharp.Debug.Log(Exception exception = null);`
-  - **ddl** - `Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0, int maxLength = 0);`
+```cs
+// Snippet shortcut: dde
+Desharp.Debug.Log(Exception exception = null);
+
+// Snippet shortcut: ddl
+Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0, int maxLength = 0);
+```
+
+```vb
+// Snippet shortcut: dde
+Desharp.Debug.Log(exception As Exception)
+
+// Snippet shortcut: ddl
+Desharp.Debug.Log(Optional obj As Object = Nothing, Optional level As Level = Level.INFO, Optional maxDepth As Int32 = 0, Optional maxLength As Int32 = 0)
+```
 
 #### Other:
   - **dds** - `Desharp.Debug.Stop();
