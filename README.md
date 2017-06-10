@@ -12,7 +12,7 @@ Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
 Desharp.Debug.Dump(object obj, DumpOptions? options = null);
 
 // Snippet shortcut: ddf
-Desharp.Debug.Fire.Log(object obj, FireLog.Debug);
+Desharp.Debug.Fire.Log(object obj);
 
 // Snippet shortcut: dddd
 Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
@@ -27,7 +27,7 @@ Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options A
 Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
 
 ' Snippet shortcut: ddf
-Desharp.Debug.Fire.Log(obj As Object, FireLog.Debug As FireLog)
+Desharp.Debug.Fire.Log(obj As Object)
 
 ' Snippet shortcut: dddd
 Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
@@ -43,18 +43,50 @@ Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0,
 ```
 
 ```vb
-// Snippet shortcut: dde
+' Snippet shortcut: dde
 Desharp.Debug.Log(exception As Exception)
 
-// Snippet shortcut: ddl
-Desharp.Debug.Log(Optional obj As Object = Nothing, Optional level As Level = Level.INFO, Optional maxDepth As Int32 = 0, Optional maxLength As Int32 = 0)
+' Snippet shortcut: ddl
+Desharp.Debug.Log(
+  Optional obj As Object = Nothing, 
+  Optional level As Level = Level.INFO, 
+  Optional maxDepth As Int32 = 0, 
+  Optional maxLength As Int32 = 0
+)
 ```
 
 #### Other:
-  - **dds** - `Desharp.Debug.Stop();
-  - **ddc** - `Desharp.Debug.Configure(DebugConfig cfg);`
-  - **dda** - `Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);`
-  - **ddt** - `Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);`
+```cs
+// Snippet shortcut: dds
+Desharp.Debug.Stop();
+
+// Snippet shortcut: ddc
+Desharp.Debug.Configure(DebugConfig cfg);
+
+// Snippet shortcut: dda
+Desharp.Debug.Assert(bool assertion, string description = "");
+
+// Snippet shortcut: ddt
+Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);
+```
+
+```vb
+' Snippet shortcut: dds
+Desharp.Debug.Stop()
+
+' Snippet shortcut: ddc
+Desharp.Debug.Configure(DebugConfig cfg)
+
+' Snippet shortcut: dda
+Desharp.Debug.Assert(assertion As Boolean, Optional description As String = "")
+
+' Snippet shortcut: ddt
+Desharp.Debug.Timer(
+  Optional name As String = Nothing, 
+  Optional returnTimerSeconds As Boolean = False, 
+  Optional logLevel As Level = Level.DEBUG
+)
+```
 
 
 ## Instalation - C#
