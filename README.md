@@ -1,5 +1,5 @@
 # Desharp - .NET Debugging Tool - C#/VB Code Snippets
-Visual Studio code snippets - automaticly generated code snippets from 3-4 letter shortcuts to work better with Desharp library.
+Visual Studio code snippets for C# or Visual Basic to work much faster with Desharp library by 3 or 4 letter shortcuts.
 
 ## Shortcuts
 #### Dumping:
