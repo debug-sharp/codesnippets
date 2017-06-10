@@ -2,20 +2,27 @@
 Visual Studio code snippets - automaticly generated code snippets from 3-4 letter shortcuts to work better with Desharp library.
 
 ## Shortcuts
-- dumping:
-  - **ddd** - ```cs
-Desharp.Debug.Dump(params object[] args);```
-            - ```cs
-Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);`
-  - **ddf** - `Desharp.Debug.Fire.Log(object obj, FireLog.);`
-  - **dddd** - `Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);`
-  - **dddo** - `Desharp.Debug.Dump(object obj, DumpOptions? options = null);`
+#### Dumping:
+```cs
+/// ddd
+Desharp.Debug.Dump(params object[] args);
+Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
 
-- logging:
+/// ddf
+Desharp.Debug.Fire.Log(object obj, FireLog.);
+
+/// dddd
+Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
+
+/// dddo
+Desharp.Debug.Dump(object obj, DumpOptions? options = null);
+```
+
+#### Logging:
   - **dde** - `Desharp.Debug.Log(Exception exception = null);`
   - **ddl** - `Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0, int maxLength = 0);`
 
-- other:
+#### Other:
   - **dds** - `Desharp.Debug.Stop();
   - **ddc** - `Desharp.Debug.Configure(DebugConfig cfg);`
   - **dda** - `Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);`
