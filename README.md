@@ -3,8 +3,10 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 
 ## Shortcuts
 - dumping:
-  - **ddd** - `Desharp.Debug.Dump(params object[] args);`
-            - `Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);`
+  - **ddd** - ```cs
+Desharp.Debug.Dump(params object[] args);```
+            - ```cs
+Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);`
   - **ddf** - `Desharp.Debug.Fire.Log(object obj, FireLog.);`
   - **dddd** - `Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);`
   - **dddo** - `Desharp.Debug.Dump(object obj, DumpOptions? options = null);`
