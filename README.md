@@ -3,7 +3,7 @@ Visual Studio code snippets - automaticly generated code snippets from 3-4 lette
 
 ## Shortcuts
 #### Dumping:
-```c#
+```csharp
 // ddd
 Desharp.Debug.Dump(params object[] args);
 Desharp.Debug.Dump(Exception exception = null, DumpOptions? options = null);
