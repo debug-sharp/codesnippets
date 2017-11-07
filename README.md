@@ -91,6 +91,7 @@ Desharp.Debug.Timer(
 ## Instalation - C#
 - download and unzip package
 - copy all files from repo directory `C#` with extension `.snippet` into directory:
+  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC#\Snippets\1033\Visual C#\`
   - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio 15.0\VC#\Snippets\1033\Visual C#\`
   - for VS 2015: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Visual C#\`
   - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC#\Snippets\1033\Visual C#\`
@@ -101,7 +102,7 @@ Desharp.Debug.Timer(
 ## Instalation - Visual Basic
 - download and unzip package
 - copy all content from repo directory `Visual Basic` into directory:
-  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio 15.0\VB\Snippets\1033\other\`
+  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VB\Snippets\1033\other\`
   - for VS 2015: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\VB\Snippets\1033\other\`
   - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VB\Snippets\1033\other\`
   - for VS 2012: `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VB\Snippets\1033\other\`
