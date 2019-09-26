@@ -42,7 +42,7 @@ Desharp.Debug.Fire.Log(obj);
 Desharp.Debug.DumpAndDie(obj);
 ```
 
-#### VB
+#### Visual Basic
 ```vb
 ' shortcut:   ddd
 ' method:     Desharp.Debug.Dump(ParamArray args As Object)
@@ -89,7 +89,7 @@ Desharp.Debug.Log(ee);
 Desharp.Debug.Log(obj, Desharp.Level.DEBUG);
 ```
 
-#### VB
+#### Visual Basic
 ```vb
 ' shortcut:   dde
 ' method:     Desharp.Debug.Log(Optional exception As Exception)
@@ -133,7 +133,7 @@ Desharp.Debug.Assert(
 // method:    Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);
 Desharp.Debug.Timer("default");
 ```
-#### VB
+#### Visual Basic
 ```vb
 ' shortcut:   dds
 ' method:     Desharp.Debug.Stop()
