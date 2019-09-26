@@ -2,35 +2,54 @@
 Visual Studio code snippets for C# or Visual Basic to work much faster with Desharp library by 3 or 4 letter shortcuts.
 
 ## Shortcuts
-#### Dumping:
+
+### Dumping:
+
+#### C#
+
 ```csharp
-// Snippet shortcut: ddd
-Desharp.Debug.Dump(params object[] args);
-Desharp.Debug.Dump(Exception exception = null, Desharp.DumpOptions? options = null);
+// shortcut:  ddd
+// method:    Desharp.Debug.Dump(params object[] args);
+// method:    Desharp.Debug.Dump(Exception exception = null, Desharp.DumpOptions? options = null);
+Desharp.Debug.Dump(obj);
 
-// Snippet shortcut: dddo
-Desharp.Debug.Dump(object obj, DumpOptions? options = null);
+// shortcut:  dddo
+// method:    Desharp.Debug.Dump(object obj, DumpOptions? options = null);
+Desharp.Debug.Dump(obj, new Desharp.DumpOptions {
+  Depth = 4,
+  Return = false
+});
 
-// Snippet shortcut: ddf
-Desharp.Debug.Fire.Log(object obj);
+// shortcut:  ddf
+// method:    Desharp.Debug.Fire.Log(object obj);
+Desharp.Debug.Fire.Log(obj);
 
-// Snippet shortcut: dddd
-Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
+// shortcut:  dddd
+// method:    Desharp.Debug.DumpAndDie(object obj = null, DumpOptions? options = null);
+Desharp.Debug.DumpAndDie(obj);
 ```
 
+#### VB
 ```vb
-' Snippet shortcut: ddd
-Desharp.Debug.Dump(ParamArray args As Object)
-Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
+' shortcut:   ddd
+// method:    Desharp.Debug.Dump(ParamArray args As Object)
+// method:    Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
+Desharp.Debug.Dump(obj)
 
-' Snippet shortcut: dddo
-Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
+' shortcut:   dddo
+// method:    Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
+Desharp.Debug.Dump(obj, New Desharp.DumpOptions With {
+  .Depth = 4,
+  .Return = false
+})
 
-' Snippet shortcut: ddf
-Desharp.Debug.Fire.Log(obj As Object)
+' shortcut:   ddf
+// method:    Desharp.Debug.Fire.Log(obj As Object)
+Desharp.Debug.Fire.Log(obj)
 
-' Snippet shortcut: dddd
-Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
+' shortcut:   dddd
+// method:    Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
+Desharp.Debug.DumpAndDie(obj)
 ```
 
 #### Logging:
