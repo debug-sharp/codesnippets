@@ -77,7 +77,7 @@ Desharp.Debug.DumpAndDie(obj)
 ```cs
 // shortcut:  dde
 // method:    Desharp.Debug.Log(Exception exception = null);
-Desharp.Debug.Log(ee);
+Desharp.Debug.Log(ex);
 
 // shortcut:  ddl
 // method:    Desharp.Debug.Log(
@@ -93,7 +93,7 @@ Desharp.Debug.Log(obj, Desharp.Level.DEBUG);
 ```vb
 ' shortcut:   dde
 ' method:     Desharp.Debug.Log(Optional exception As Exception)
-Desharp.Debug.Log(ee)
+Desharp.Debug.Log(ex)
 
 ' shortcut:   ddl
 ' method:     Desharp.Debug.Log(
