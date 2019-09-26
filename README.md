@@ -11,6 +11,7 @@ Visual Studio code snippets for C# or Visual Basic to work much faster with Desh
   - [Other](#)
 - [Instalation](#)
 - [How To Create Custom Code Snippet](#)
+
 -----------------------------------------------
 
 ## Shortcuts
@@ -166,6 +167,8 @@ Desharp.Debug.Assert(
 Desharp.Debug.Timer("default")
 ```
 
+-----------------------------------------------
+
 ## Instalation
 
 #### C#
@@ -194,6 +197,8 @@ Desharp.Debug.Timer("default")
 				 `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VB\Snippets\1033\other\`
   - ...
 - you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
+
+-----------------------------------------------
 
 ## How To Create Custom Code Snippet
 
