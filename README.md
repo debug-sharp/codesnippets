@@ -30,7 +30,7 @@ Desharp.Debug.Dump(obj);
 // method:    Desharp.Debug.Dump(object obj, DumpOptions? options = null);
 Desharp.Debug.Dump(obj, new Desharp.DumpOptions {
   Depth = 4,
-  Return = false
+  SourceLocation = true
 });
 
 // shortcut:  ddf
@@ -56,7 +56,7 @@ Desharp.Debug.Dump(obj)
 ' method:     Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
 Desharp.Debug.Dump(obj, New Desharp.DumpOptions With {
   .Depth = 4,
-  .Return = false
+  .SourceLocation = True
 })
 
 ' shortcut:   ddf
