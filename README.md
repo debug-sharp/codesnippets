@@ -1,9 +1,21 @@
 # Desharp - .NET Debugging Tool - C#/VB Code Snippets
+
+-----------------------------------------------
+
 Visual Studio code snippets for C# or Visual Basic to work much faster with Desharp library by 3 or 4 letter shortcuts.
+
+## Outline
+- [Shortcuts](#)
+  - [Dumping](#)
+  - [Logging](#)
+  - [Other](#)
+- [Instalation](#)
+- [How To Create Custom Code Snippet](#)
+-----------------------------------------------
 
 ## Shortcuts
 
-### Dumping:
+### Dumping
 
 #### C#
 
@@ -58,13 +70,13 @@ Desharp.Debug.Fire.Log(obj)
 Desharp.Debug.DumpAndDie(obj)
 ```
 
-### Logging:
+### Logging
 
 #### C#
 ```cs
 // shortcut:  dde
 // method:    Desharp.Debug.Log(Exception exception = null);
-Desharp.Debug.Log(e);
+Desharp.Debug.Log(ee);
 
 // shortcut:  ddl
 // method:    Desharp.Debug.Log(
@@ -80,7 +92,7 @@ Desharp.Debug.Log(obj, Desharp.Level.DEBUG);
 ```vb
 ' shortcut:   dde
 ' method:     Desharp.Debug.Log(Optional exception As Exception)
-Desharp.Debug.Log(e)
+Desharp.Debug.Log(ee)
 
 ' shortcut:   ddl
 ' method:     Desharp.Debug.Log(
@@ -92,7 +104,7 @@ Desharp.Debug.Log(e)
 Desharp.Debug.Log(obj, Desharp.Level.DEBUG)
 ```
 
-### Other:
+### Other
 
 #### C#
 ```cs
@@ -154,7 +166,9 @@ Desharp.Debug.Assert(
 Desharp.Debug.Timer("default")
 ```
 
-## Instalation - C#
+## Instalation
+
+#### C#
 - download and unzip package
 - copy all files from repo directory `C#` with extension `.snippet` into directory:
   - for VS 2019: `%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets\`
@@ -167,7 +181,7 @@ Desharp.Debug.Timer("default")
   - ...
 - you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
 
-## Instalation - Visual Basic
+#### Visual Basic
 - download and unzip package
 - copy all content from repo directory `Visual Basic` into directory:
 
@@ -181,5 +195,6 @@ Desharp.Debug.Timer("default")
   - ...
 - you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
 
-**More info how to create a code snippet:**  
+## How To Create Custom Code Snippet
+
 https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019
