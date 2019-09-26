@@ -157,20 +157,29 @@ Desharp.Debug.Timer("default")
 ## Instalation - C#
 - download and unzip package
 - copy all files from repo directory `C#` with extension `.snippet` into directory:
-  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC#\Snippets\1033\Visual C#\`
-  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio 15.0\VC#\Snippets\1033\Visual C#\`
-  - for VS 2015: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Visual C#\`
-  - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC#\Snippets\1033\Visual C#\`
-  - for VS 2012: `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC#\Snippets\1033\Visual C#\`
+  - for VS 2019: `%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets\`
+  - for VS 2017: `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets\`
+  - for VS 2015: `%USERPROFILE%\Documents\Visual Studio 2015\Code Snippets\Visual C#\My Code Snippets\`
+  - for VS 2013: `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual C#\My Code Snippets\`
+				 `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC#\Snippets\1033\Visual C#\`
+  - for VS 2012: `%USERPROFILE%\Documents\Visual Studio 2012\Code Snippets\Visual C#\My Code Snippets\`
+				 `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC#\Snippets\1033\Visual C#\`
   - ...
-- you can use it immediately, no needs to restart Visual Studio (tested in 2015)
+- you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
 
 ## Instalation - Visual Basic
 - download and unzip package
 - copy all content from repo directory `Visual Basic` into directory:
-  - for VS 2017: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VB\Snippets\1033\other\`
-  - for VS 2015: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\VB\Snippets\1033\other\`
-  - for VS 2013: `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VB\Snippets\1033\other\`
-  - for VS 2012: `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VB\Snippets\1033\other\`
+
+  - for VS 2019: `%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\`
+  - for VS 2017: `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets\`
+  - for VS 2015: `%USERPROFILE%\Documents\Visual Studio 2015\Code Snippets\Visual Basic\My Code Snippets\`
+  - for VS 2013: `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets\`
+				 `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VB\Snippets\1033\other\`
+  - for VS 2012: `%USERPROFILE%\Documents\Visual Studio 2012\Code Snippets\Visual Basic\My Code Snippets\`
+				 `C:\Program Files (x86)\Microsoft Visual Studio 11.0\VB\Snippets\1033\other\`
   - ...
-- you can use it immediately, no needs to restart Visual Studio (tested in 2015)
+- you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
+
+**More info how to create a code snippet:**
+https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019
