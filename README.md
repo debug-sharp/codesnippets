@@ -5,12 +5,12 @@
 Visual Studio code snippets for C# or Visual Basic to work much faster with Desharp library by 3 or 4 letter shortcuts.
 
 ## Outline
-- [Shortcuts](#)
-  - [Dumping](#)
-  - [Logging](#)
-  - [Other](#)
-- [Instalation](#)
-- [How To Create Custom Code Snippet](#)
+- [Shortcuts](#shortcuts)
+  - [Dumping](#dumping)
+  - [Logging](#logging)
+  - [Other](#other)
+- [Instalation](#instalation)
+- [How To Create Custom Code Snippet](#how-to-create-custom-code-snippet)
 
 -----------------------------------------------
 
