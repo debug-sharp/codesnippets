@@ -32,23 +32,23 @@ Desharp.Debug.DumpAndDie(obj);
 #### VB
 ```vb
 ' shortcut:   ddd
-// method:    Desharp.Debug.Dump(ParamArray args As Object)
-// method:    Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
+' method:     Desharp.Debug.Dump(ParamArray args As Object)
+' method:     Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
 Desharp.Debug.Dump(obj)
 
 ' shortcut:   dddo
-// method:    Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
+' method:     Desharp.Debug.Dump(obj As Object, Optional options As DumpOptions? = Nothing)
 Desharp.Debug.Dump(obj, New Desharp.DumpOptions With {
   .Depth = 4,
   .Return = false
 })
 
 ' shortcut:   ddf
-// method:    Desharp.Debug.Fire.Log(obj As Object)
+' method:     Desharp.Debug.Fire.Log(obj As Object)
 Desharp.Debug.Fire.Log(obj)
 
 ' shortcut:   dddd
-// method:    Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
+' method:     Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
 Desharp.Debug.DumpAndDie(obj)
 ```
 
