@@ -33,7 +33,10 @@ Desharp.Debug.DumpAndDie(obj);
 ```vb
 ' shortcut:   ddd
 ' method:     Desharp.Debug.Dump(ParamArray args As Object)
-' method:     Desharp.Debug.Dump(Optional exception As Exception = Nothing, Optional options As DumpOptions? = Nothing)
+' method:     Desharp.Debug.Dump(
+'               Optional exception As Exception = Nothing, 
+'               Optional options As DumpOptions? = Nothing
+'             )
 Desharp.Debug.Dump(obj)
 
 ' shortcut:   dddo
@@ -48,63 +51,107 @@ Desharp.Debug.Dump(obj, New Desharp.DumpOptions With {
 Desharp.Debug.Fire.Log(obj)
 
 ' shortcut:   dddd
-' method:     Desharp.Debug.DumpAndDie(Optional obj As Object = Nothing, Optional options As DumpOptions? = Nothing)
+' method:     Desharp.Debug.DumpAndDie(
+'               Optional obj As Object = Nothing, 
+'               Optional options As DumpOptions? = Nothing
+'             )
 Desharp.Debug.DumpAndDie(obj)
 ```
 
-#### Logging:
-```cs
-// Snippet shortcut: dde
-Desharp.Debug.Log(Exception exception = null);
+### Logging:
 
-// Snippet shortcut: ddl
-Desharp.Debug.Log(object obj = null, Level level = Level.INFO, int maxDepth = 0, int maxLength = 0);
+#### C#
+```cs
+// shortcut:  dde
+// method:    Desharp.Debug.Log(Exception exception = null);
+Desharp.Debug.Log(e);
+
+// shortcut:  ddl
+// method:    Desharp.Debug.Log(
+//              object obj = null, 
+//              Level level = Level.INFO, 
+//              int maxDepth = 0, 
+//              int maxLength = 0
+//            );
+Desharp.Debug.Log(obj, Desharp.Level.DEBUG);
 ```
 
+#### VB
 ```vb
-' Snippet shortcut: dde
-Desharp.Debug.Log(Optional exception As Exception)
+' shortcut:   dde
+' method:     Desharp.Debug.Log(Optional exception As Exception)
+Desharp.Debug.Log(e)
 
-' Snippet shortcut: ddl
-Desharp.Debug.Log(
-  Optional obj As Object = Nothing, 
-  Optional level As Level = Level.INFO, 
-  Optional maxDepth As Int32 = 0, 
-  Optional maxLength As Int32 = 0
-)
+' shortcut:   ddl
+' method:     Desharp.Debug.Log(
+'               Optional obj As Object = Nothing, 
+'               Optional level As Level = Level.INFO, 
+'               Optional maxDepth As Int32 = 0, 
+'               Optional maxLength As Int32 = 0
+'             )
+Desharp.Debug.Log(obj, Desharp.Level.DEBUG)
 ```
 
-#### Other:
+### Other:
+
+#### C#
 ```cs
-// Snippet shortcut: dds
+// shortcut:  dds
+// method:    Desharp.Debug.Stop();
 Desharp.Debug.Stop();
 
-// Snippet shortcut: ddc
-Desharp.Debug.Configure(DebugConfig cfg);
+// shortcut:  ddc
+// method:    Desharp.Debug.Configure(Desharp.DebugConfig cfg);
+Desharp.Debug.Configure(new Desharp.DebugConfig {
+  Enabled = true,
+  Depth = 3,
+  Directory = "~/logs",
+  LogFormat = Desharp.LogFormat.Auto
+});
 
-// Snippet shortcut: dda
-Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);
+// shortcut:  dda
+// method:    Desharp.Debug.Assert(bool assertion, string description = "", Level logLevel = Level.DEBUG);
+Desharp.Debug.Assert(
+  true,
+  ""
+);
 
-// Snippet shortcut: ddt
-Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);
+// shortcut:  ddt
+// method:    Desharp.Debug.Timer(string name = null, bool returnTimerSeconds = false, Level logLevel = Level.DEBUG);
+Desharp.Debug.Timer("default");
 ```
-
+#### VB
 ```vb
-' Snippet shortcut: dds
+' shortcut:   dds
+' method:     Desharp.Debug.Stop()
 Desharp.Debug.Stop()
 
-' Snippet shortcut: ddc
-Desharp.Debug.Configure(cfg As DebugConfig)
+' shortcut:   ddc
+' method:     Desharp.Debug.Configure(cfg As Desharp.DebugConfig)
+Desharp.Debug.Configure(New Desharp.DebugConfig With {
+  .Enabled = true,
+  .Depth = 3,
+  .Directory = "~/logs",
+  .LogFormat = Desharp.LogFormat.Auto
+})
 
-' Snippet shortcut: dda
-Desharp.Debug.Assert(assertion As Boolean, Optional description As String = "", Optional logLevel As Level = Level.DEBUG)
-
-' Snippet shortcut: ddt
-Desharp.Debug.Timer(
-  Optional name As String = Nothing, 
-  Optional returnTimerSeconds As Boolean = False, 
-  Optional logLevel As Level = Level.DEBUG
+' shortcut:   dda
+' method:     Desharp.Debug.Assert(
+'               assertion As Boolean, Optional description As String = "", 
+'               Optional logLevel As Level = Level.DEBUG
+'             )
+Desharp.Debug.Assert(
+  True,
+  ""
 )
+
+' shortcut:   ddt
+' method:     Desharp.Debug.Timer(
+'               Optional name As String = Nothing, 
+'               Optional returnTimerSeconds As Boolean = False, 
+'               Optional logLevel As Level = Level.DEBUG
+'             )
+Desharp.Debug.Timer("default")
 ```
 
 ## Instalation - C#
