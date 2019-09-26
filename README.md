@@ -181,5 +181,5 @@ Desharp.Debug.Timer("default")
   - ...
 - you can use it immediately, no needs to restart Visual Studio (tested in 2015+)
 
-**More info how to create a code snippet:**
+**More info how to create a code snippet:**  
 https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019
