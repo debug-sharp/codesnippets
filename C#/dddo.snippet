@@ -28,9 +28,9 @@
 					<ToolTip>Printed object structure depth (levels count to print).</ToolTip>
 				</Literal>
 				<Literal>
-					<ID>return</ID>
-					<Default>false</Default>
-					<ToolTip>True to return printed object as string object reprezentation.</ToolTip>
+					<ID>sourceLocation</ID>
+					<Default>true</Default>
+					<ToolTip>True to display source location, from where dump was called.</ToolTip>
 				</Literal>
 				<Literal>
 					<ID>snippetEnd</ID>
@@ -39,7 +39,7 @@
 			</Declarations>
 			<Code Language="csharp"><![CDATA[$DesharpDebug$.Dump($obj$, new $DesharpDumpOptions$ {
 				Depth = $depth$,
-				Return = $return$
+				SourceLocation = $sourceLocation$
 			});$snippetEnd$]]></Code>
 		</Snippet>
 	</CodeSnippet>
